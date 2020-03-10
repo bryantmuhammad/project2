@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nim"
+        android:id="@+id/edNim"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nama"
+        android:id="@+id/edNama"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="jurusan"
+        android:id="@+id/edJurusan"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/jk"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/pria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pria"/>
+        <RadioButton
+            android:id="@+id/wanita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wanita"/>
+    </RadioGroup>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memancing"
+        android:id="@+id/mancing"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memasak"
+            android:id="@+id/masak"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidur"
+            android:id="@+id/tidur"/>
+
+</LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slct"
+        android:entries="@array/arr"
+        android:layout_marginBottom="10dp"/>
+
+
+        <EditText
+            android:id="@+id/eTgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="pilih tanggal..."/>
+
+    <EditText
+        android:id="@+id/waktu"
+        android:hint="pilih waktu...."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Process"
+            android:onClick="onProses"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/holo_orange_light"
+            android:id="@+id/btnProcess"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:visibility="invisible"
+      android:id="@+id/txtHasil"/>
+
+
+
+</LinearLayout>

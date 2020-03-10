@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">project 2</string>
+
+    <string-array name="arr">
+        <item>Pilih</item>
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Hindu</item>
+    </string-array>
+</resources>
